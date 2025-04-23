@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 id="ftitle">Survey Form</h1>
+        <p>This is a normal form with method POST</p>
+        <form action="form.php" method="POST">
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Suzuki" required>
+                <label  for="fname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Nobita" required>
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="0" minlength="1" maxlength="100" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="snobita@gmail.com" required>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <label for="gender">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="gender">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            <div>
+                <label for="bdate">Birthday:</label>
+                <input type="date" name="bdate" id="bdate" >
+            </div>
+            <div>
+                <label for="dpfind">Where do you find me:</label>
+                <select id="dpfind" name="dpfind" >
+                    <option value="facebook">Facebook</option>
+                    <option value="Linkedln">Linkedln</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Instagram">Instagram</option>
+                </select>
+            </div>
+            <div>
+                <label for="cbagree">I agree not to disclose, share, or use any confidential <a href="https://dictionary.cambridge.org/dictionary/english/information" target="_blank" >information</a> received, discussed, or accessed without prior written permission.</label>
+                <input type="checkbox" id="cbagree" name="cbagree" required>
+            </div>
+            <div>
+                <input type="submit" id="submit">
+                <input type="reset" id="reset">
+            </div>
+        </form>
+    </main>
+    <footer>This is a kakier</footer>
+</body>
+</html>

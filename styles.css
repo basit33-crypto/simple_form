@@ -1,0 +1,35 @@
+body{
+background-color: rgb(215, 228, 240);
+
+}
+main{
+    background-color: antiquewhite;
+    border: solid aliceblue;
+    border-radius: 10px;
+    box-shadow: rgb(63, 61, 61);
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+}
+footer{
+    background-color: rgb(201, 169, 129);
+    margin-bottom: 0px;
+    min-height: 120px;
+}
+#submit, #reset{
+ margin: 5px;
+}
+a{
+    color: rgb(255, 0, 0);
+}
+a:hover{
+    color: blue;
+}
